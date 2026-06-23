@@ -58,6 +58,26 @@ a[href*="tel:"] {
 <p><a href="https://wa.me/34627676360">WhatsApp: 627 676 360</a></p>
 <p><a href="tel:+34627676360">📞 Llamar: 627 676 360</a></p>
 <p>Email: Autos.damm@gmail.com</p>
+<p>Email: Autos.damm@gmail.com</p>
+
+<h3>📋 Solicita una tasación gratuita</h3>
+
+<form onsubmit="enviarWhatsApp(); return false;">
+
+<input type="text" id="nombre" placeholder="Nombre" required><br><br>
+
+<input type="text" id="vehiculo" placeholder="Marca y modelo" required><br><br>
+
+<input type="number" id="ano" placeholder="Año del vehículo" required><br><br>
+
+<input type="text" id="deuda" placeholder="Tipo de deuda o carga" required><br><br>
+
+<input type="tel" id="telefono" placeholder="Teléfono de contacto" required><br><br>
+
+<button type="button">📲 Enviar por WhatsApp</button>
+
+</form>
+
 <h3>¿Por qué elegir DAMM-Auto?</h3>
 
 <p>✅ Tasación gratuita</p>
@@ -84,6 +104,29 @@ Turismos, furgonetas, todoterrenos, vehículos averiados,
 sin ITV, con embargo, reserva de dominio, deudas,
 precintos y para exportación.
 </p>   
+<script>
+function enviarWhatsApp() {
 
+var nombre = document.getElementById("nombre").value;
+var vehiculo = document.getElementById("vehiculo").value;
+var ano = document.getElementById("ano").value;
+var deuda = document.getElementById("deuda").value;
+var telefono = document.getElementById("telefono").value;
+
+var mensaje =
+"Hola, quiero vender mi vehículo.%0A%0A" +
+"Nombre: " + nombre + "%0A" +
+"Marca y modelo: " + vehiculo + "%0A" +
+"Año: " + ano + "%0A" +
+"Tipo de deuda: " + deuda + "%0A" +
+"Teléfono: " + telefono;
+
+window.open(
+"https://wa.me/34627676360?text=" + mensaje,
+"_blank"
+);
+
+}
+</script>
 </body>
 </html>
