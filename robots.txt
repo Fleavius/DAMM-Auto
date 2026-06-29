@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dammautos.com/sitemap.xml
