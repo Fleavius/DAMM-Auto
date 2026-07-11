@@ -498,13 +498,21 @@ var mensaje =
 "Teléfono: " + telefono;
 
 gtag('event', 'conversion', {
-    'send_to': 'AW-18283195527/qKOjCPS8tMccEIfZjY5E'
+    'send_to': 'AW-18283195527/qKOjCPS8tMccEIfZjY5E',
+    'event_callback': function () {
+        window.open(
+            "https://wa.me/34627676360?text=" + mensaje,
+            "_blank"
+        );
+    }
 });
-    
-window.open(
-"https://wa.me/34627676360?text=" + mensaje,
-"_blank"
-);
+
+setTimeout(function () {
+    window.open(
+        "https://wa.me/34627676360?text=" + mensaje,
+        "_blank"
+    );
+}, 1000);
 
 }
 </script>
