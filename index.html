@@ -110,11 +110,14 @@ button {
     top:0;
     z-index:999;
     background:#08192d;
-    display:flex;
-    justify-content:space-between;
+    display:block;
+    text-align:center;
     align-items:center;
     padding:15px 30px;
     box-shadow:0 5px 20px rgba(0,0,0,.4);
+  
+    flex-direction:column;
+    justify-content:center;
 }
 
 .logo{
@@ -132,13 +135,11 @@ button {
 .menu ul{
     display:flex;
     justify-content:center;
-    align-items:center;
     flex-wrap:wrap;
     list-style:none;
     gap:35px;
-    margin-top:15px;
+    margin:15px 0 0 0;
     padding:0;
-    width:100%;
 }
 
 .menu a{
