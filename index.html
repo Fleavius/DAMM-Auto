@@ -105,6 +105,49 @@ button {
         line-height: 1.15 !important;
     }
 }
+.menu{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#08192d;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+.logo{
+    color:white;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.menu ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+    margin:0;
+    padding:0;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#3fa9ff;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+    padding:10px 18px;
+    border-radius:8px;
+    color:white!important;
+}
 </style>
 <script type="application/ld+json">
 {
@@ -123,6 +166,22 @@ button {
 </script>
 </head>  
 <body>
+<nav class="menu">
+    <div class="logo">🚗 DAMM-Auto</div>
+
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#vender">Vender vehículo</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#vehiculos">Vehículos</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <a class="whatsapp-btn" href="https://wa.me/34627676360" target="_blank">
+        WhatsApp
+    </a>
+</nav>
 <img src="4DEEDD88-BF87-4FB3-8CC8-AAD511813131.png" style="width:100%; max-width:700px; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
 <h1>🚗 DAMM-Auto</h1>
 
